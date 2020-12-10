@@ -12,9 +12,9 @@
  */
 
 // Variable to store the list of guesses 
-var guesses = [];
+let guesses = [];
 // Variable for store the correct random number 
-var correctNumber = getRandomNumber();
+let correctNumber = getRandomNumber();
 
 window.onload = function() {
     document.getElementById("number-submit").addEventListener("click", playGame);
@@ -25,8 +25,7 @@ window.onload = function() {
  * Functionality for playing the whole game
  */
 function playGame(){
-  // *CODE GOES BELOW HERE *
-  var numberGuess = document.getElementById("number-guess").value;
+  let numberGuess = document.getElementById("number-guess").value;
   //console.log(correctNumber);
   displayResult(numberGuess);
   saveGuessHistory(numberGuess);
@@ -37,7 +36,6 @@ function playGame(){
  * Show the result for if the guess it too high, too low, or correct
  * HINT: Use if, else if, else statement 
  */
-// *CODE GOES BELOW HERE *
 function displayResult(numberGuess) {
   if ( numberGuess > correctNumber ) {
     showNumberAbove();
@@ -57,7 +55,6 @@ function displayResult(numberGuess) {
  * HINT: reset the correctNumber, guesses, and HTML content
  */
 function initGame(){
-  // *CODE GOES BELOW HERE *
   correctNumber = getRandomNumber();
   resetResultContent();
   guesses = [];
@@ -77,7 +74,6 @@ function resetResultContent(){
  * HINT: Use Math.random 
  */
 function getRandomNumber(){
-  // *CODE GOES BELOW HERE *
   return Math.floor(Math.random() * (Math.floor(100) - Math.ceil(1) + 1) + Math.ceil(1));
   
 }
@@ -88,7 +84,6 @@ function getRandomNumber(){
  * HINT: Use the guesses variable
  */
 function saveGuessHistory(guess) {
-  // *CODE GOES BELOW HERE *
   guesses.push(guess);
   console.log(guesses);
 }
