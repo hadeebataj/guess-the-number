@@ -99,7 +99,6 @@ function saveGuessHistory(guess) {
 function displayHistory() {
   let index = guesses.length - 1; // TODO
   let list = "<ul class='list-group'>";
-  // *CODE GOES BELOW HERE *
   while( index >= 0 ) {
     number = guesses[index];
     list += `<li class = 'list-group-item'>You guessed ${number}</li>`;
@@ -136,7 +135,6 @@ function showYouWon(){
    * and save it to variable called dialog
    * HINT: Use the 'won' and text parameters 
    */
-  // *CODE GOES BELOW HERE *
   var dialog = getDialog('won', text);
   document.getElementById("result").innerHTML = dialog;
 }
@@ -148,7 +146,6 @@ function showNumberAbove(){
    * and save it to variable called dialog
    * HINT: Use the 'warning' and text parameters 
    */
-  // *CODE GOES BELOW HERE *
   var dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
@@ -160,7 +157,6 @@ function showNumberBelow(){
    * and save it to variable called dialog
    * HINT: Use the 'warning' and text parameters 
    */
-  // *CODE GOES BELOW HERE *
   var dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
